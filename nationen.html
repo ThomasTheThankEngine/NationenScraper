@@ -33,8 +33,8 @@
 <meta name="eb:image-rel" content="https://ebimg.dk/ux/data/social/eblogo_1024.png" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-<link href="/assets/sections/css/desktop.css?v=20190114" rel="stylesheet" />
-  <link href="/assets/drfront/css/drfront.css?v=20190114" rel="stylesheet" />
+<link href="/assets/sections/css/desktop.css?v=201901181552" rel="stylesheet" />
+  <link href="/assets/drfront/css/drfront.css?v=201901181552" rel="stylesheet" />
 <script>
 ;(function (ebJS, jsonpCallback) {
   var ebOptions = ebJS.options = ebJS.options || {};
@@ -48,7 +48,7 @@
 } (window.ebJS = window.ebJS || {}, window.jsonpCallback = window.jsonpCallback || {}))
 </script>
 
-<script src="/assets/js/dist/desktop.min.js?v=20190114" async></script>
+<script src="/assets/js/dist/desktop.min.js?v=201901181552" async></script>
 <style>
         /**
 * Overlay background
@@ -199,9 +199,9 @@
     var adsmtag = adsmtag || {};
     adsmtag.cmd = adsmtag.cmd || [];
   </script>
-<script src="/assets/js/dist/jppolApn.desktop.min.js?c=20190114"></script>
-  <script src="//ebimg.dk/ux/data/prebid/jppol-prebid.min.js?c=20190114"></script>
-<script src="//acdn.adnxs.com/ast/ast.js?c=20190114" async></script>
+<script src="/assets/js/dist/jppolApn.desktop.min.js?c=201901181552"></script>
+  <script src="//ebimg.dk/ux/data/prebid/jppol-prebid.min.js?c=201901181552"></script>
+<script src="//acdn.adnxs.com/ast/ast.js?c=201901181552" async></script>
 
 <script>
   var appBanners = [];
@@ -363,19 +363,20 @@
     banners: appBanners,
     debug: '' === 'true',
     device: 'desktop',
-    // environment: 'PRODUCTION',
-    imp: '' === 'true', // 
     isFrontpage: 'false' === 'true',
     publisherId: parseFloat('1410923'),
     relativePath: 'ekstrabladet/nationen',
     usePrebid: 'true' === 'true',
-    topscroll: '' === 'true'
+    topscroll: 'true' === 'true'
   })
 </script>
 <link href="//ebimg.dk/ux/data/touchicons/eb_icon.png" rel="apple-touch-icon" />
 </head>
 <body class="desktop">
-    <div class="wireframe--desktop wireframe--section" id="ebWireframe">
+    <div id="manipulate_apn_topscroll" class="eb-position eb-position--topscroll">
+      <div id="apn_ad_slot_topscroll" class="topscroll"></div>
+    </div>
+  <div class="wireframe--desktop wireframe--section" id="ebWireframe">
         <div id="sitehead" class="masthead oo-line">
         <div class="oo-line">
                 <div class="privacy eb-bg--graa6 oo-right pad-s pad-m--l pad-l--r eb-color--graa2 fs-ads" style="border-radius: 0 0 0 10px;">
@@ -398,25 +399,24 @@
                 <div class="oo-lastUnit">
     <div class="oo-line topscroll">
         <div class="oo-left list-ekstracontainer fnSpaceManagement" id="spmTopbaand_left" data-spcmngm="topbaand_left" data-spcmngmtype="redaktionelt_betalt">
-            <div class="list-scroll hover-showbtn--right list-scroll--ekstra" id="scroll_scr5XDTO5iybollid_wrapper">
-  <div class="list--flex eb-row--itemstretch list-scroll-move list-scroll-move--ekstra" id="scroll_scr5XDTO5iybollid">
+            <div class="list-scroll hover-showbtn--right list-scroll--ekstra" id="scroll_scri5tvG3gsiollid_wrapper">
+  <div class="list--flex eb-row--itemstretch list-scroll-move list-scroll-move--ekstra" id="scroll_scri5tvG3gsiollid">
 
     <div class="list-item--scroll list-item--scroll-ekstra list-item--scroll-right">
 
-        <a href="/plus/kendte/vil-du-ha-mere-reality-awards-se-hele-showet-her/7470806" class="size1of1  eb-bg--black list--flex eb-row--itemreverse list-link--scroll-right">
+        <a href="/plus/nu-spidser-det-til-i-vm-manager-dem-skal-du-koebe/7478677" class="size1of1  eb-bg--black list--flex eb-row--itemreverse list-link--scroll-right">
           <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
-    <img src="/incoming/u1wmig/7470374/IMAGE_ALTERNATES/relationBig_300/dcx-75029996-20190111221505" height="169" width="300"
+    <img src="/incoming/fkflke/7478852/IMAGE_ALTERNATES/relationBig_300/desktop-20190117124924" height="169" width="300"
       
     class="list-image size1of1" />
-    <div class="indicator-overlay indicator-video"></div>
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll list-text--ekstra">
             <div class="list-stamp  size1of1 fs-timestamp">
-      Kendte</div>
+      Plus</div>
   <div class="oo-line">
               <svg viewBox="0 0 100 100" class="ebplus-list--s">
                       <use xlink:href="#ebplus_sort"></use>
-                    </svg>Vil du ha' mere Reality Awards? Se hele showet her</div>
+                    </svg>Nu spidser det til i VM-manager: Dem skal du købe</div>
             </div>
         </a>
 
@@ -426,60 +426,103 @@
   </div>
 </div>
         <div class="oo-lastUnit fnSpaceManagement" id="spmTopbaand_right" data-spcmngm="topbaand_right" data-spcmngmtype="redaktionelt_gratis">
-            <div class="list-scroll hover-showbtn--right list-scroll--right" id="scroll_scrH8W4b2Hioollid_wrapper">
-  <div class="list--flex eb-row--itemstretch list-scroll-move" id="scroll_scrH8W4b2Hioollid">
+            <div class="list-scroll hover-showbtn--right list-scroll--right" id="scroll_scr0LPJlcWLPollid_wrapper">
+  <div class="list--flex eb-row--itemstretch list-scroll-move" id="scroll_scr0LPJlcWLPollid">
 
     <div class="list-item--scroll eb-bg--black list-item--scroll-right">
 
-        <a href="/112/anholdt-24-aarig-sigtes-for-to-skyderier-paa-noerrebro-med-ak-47-automatriffel/7479392" class="size1of1  eb-bg--black list--flex eb-row--itemreverse list-link--scroll-right">
+        <a href="/nyheder/krigogkatastrofer/russisk-mand-ville-draebe-flest-muligt-i-norsk-supermarked/7481349" class="size1of1  eb-bg--black list--flex eb-row--itemreverse list-link--scroll-right">
+          <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
+            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
+      <time>8 minutter siden</time></div>
+  <div class="oo-line">
+              Russisk mand ville dræbe flest muligt i norsk supermarked</div>
+            </div>
+        </a>
+
+      </div>
+
+    <div class="list-item--scroll eb-bg--black list-item--scroll-right">
+
+        <a href="/nyheder/samfund/rusland-frygter-nyt-vaabenkaploeb-fra-trump/7481437" class="size1of1  eb-bg--black list--flex eb-row--itemreverse list-link--scroll-right">
           <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
-    <img src="/incoming/a2dau3/7479172/IMAGE_ALTERNATES/relationBig_300/dcx-75079996-20190117144200" height="169" width="300"
+    <img src="/incoming/x44txh/7473799/IMAGE_ALTERNATES/relationBig_300/dcx-75056287-20190115004501" height="169" width="300"
+      
+    class="list-image size1of1" />
+    </div>
+<div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
+            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
+      <time>9 minutter siden</time></div>
+  <div class="oo-line">
+              Rusland frygter nyt våbenkapløb fra Trump</div>
+            </div>
+        </a>
+
+      </div>
+
+    <div class="list-item--scroll eb-bg--black list-item--scroll-right">
+
+        <a href="/112/efter-et-halvt-aar-med-forbud-12-har-faaet-burka-boede/7481442" class="size1of1  eb-bg--black list--flex eb-row--itemreverse list-link--scroll-right">
+          <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
+            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
+      <time>10 minutter siden</time></div>
+  <div class="oo-line">
+              Efter et halvt år med forbud: 12 har fået burka-bøde</div>
+            </div>
+        </a>
+
+      </div>
+
+    <div class="list-item--scroll eb-bg--black list-item--scroll-right">
+
+        <a href="/nyheder/samfund/trump-skal-droefte-nedrustning-med-kim-jong-uns-hoejre-haand/7481447" class="size1of1  eb-bg--black list--flex eb-row--itemreverse list-link--scroll-right">
+          <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
+    <img src="/incoming/wiyqa/7473682/IMAGE_ALTERNATES/relationBig_300/dcx-75055303-20190114211300" height="169" width="300"
+      
+    class="list-image size1of1" />
+    </div>
+<div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
+            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
+      <time>17 minutter siden</time></div>
+  <div class="oo-line">
+              Trump skal drøfte nedrustning med Kim Jong-uns højre hånd</div>
+            </div>
+        </a>
+
+      </div>
+
+    <div class="list-item--scroll eb-bg--sport list-item--scroll-right">
+
+        <a href="/sport/haandbold/vm-skandale-spanske-spillere-paa-hospitalet-efter-uheld/7481448" class="size1of1  eb-bg--sport list--flex eb-row--itemreverse list-link--scroll-right">
+          <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
+    <img src="/incoming/mgdvw7/7481472/IMAGE_ALTERNATES/relationBig_300/dcx-73825729-20190118190200" height="169" width="300"
+      
+    class="list-image size1of1" />
+    </div>
+<div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
+            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
+      <time>20 minutter siden</time></div>
+  <div class="oo-line">
+              VM-skandale! Spanske spillere på hospitalet efter uheld</div>
+            </div>
+        </a>
+
+      </div>
+
+    <div class="list-item--scroll eb-bg--black list-item--scroll-right">
+
+        <a href="/nyheder/samfund/danskere-midt-paa-atlanterhavet-taarerne-presser-paa/7481466" class="size1of1  eb-bg--black list--flex eb-row--itemreverse list-link--scroll-right">
+          <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
+    <img src="/incoming/x3ikke/7481425/IMAGE_ALTERNATES/relationBig_300/desktop-20190118180334" height="169" width="300"
       
     class="list-image size1of1" />
     <div class="indicator-overlay indicator-video"></div>
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <time>11 minutter siden</time></div>
+      <time>26 minutter siden</time></div>
   <div class="oo-line">
-              Anholdt 24-årig sigtes for to skyderier på Nørrebro med AK 47 automatriffel </div>
-            </div>
-        </a>
-
-      </div>
-
-    <div class="list-item--scroll eb-bg--breaking list-item--scroll-right">
-
-        <a href="/112/db-cargo-maa-igen-koere-med-saette-og-lommevogne/7480186" class="size1of1  eb-bg--breaking list--flex eb-row--itemreverse list-link--scroll-right">
-          <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
-    <img src="/nyheder/erhverv/epn/eoxxw2/7465049/IMAGE_ALTERNATES/relationBig_300/desktop-20190108131800" height="169" width="300"
-      
-    class="list-image size1of1" />
-    </div>
-<div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
-            <div class="list-stamp size1of1 fs-timestamp">
-      BREAKING NEWS
-    </div>
-  <div class="oo-line">
-              DB Cargo må igen køre med sætte- og lommevogne</div>
-            </div>
-        </a>
-
-      </div>
-
-    <div class="list-item--scroll eb-bg--black list-item--scroll-right">
-
-        <a href="/nyheder/samfund/nerver-af-staal-her-dykker-de-med-den-stoerste-hvidhaj-nogensinde-fanget-paa-kamera/7479251" class="size1of1  eb-bg--black list--flex eb-row--itemreverse list-link--scroll-right">
-          <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
-    <img src="/incoming/lkqr0b/7479517/IMAGE_ALTERNATES/relationBig_300/dcx-75081352-20190117164800" height="169" width="300"
-      
-    class="list-image size1of1" />
-    </div>
-<div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
-            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <time>40 minutter siden</time></div>
-  <div class="oo-line">
-              Nerver af stål: Her dykker de med den største hvidhaj nogensinde fanget på kamera</div>
+              Danskere midt på Atlanterhavet: Tårerne presser på</div>
             </div>
         </a>
 
@@ -487,36 +530,18 @@
 
     <div class="list-item--scroll eb-bg--flash list-item--scroll-right">
 
-        <a href="/flash/kultur/megastjerner-hovednavn-paa-dansk-festival/7480166" class="size1of1  eb-bg--flash list--flex eb-row--itemreverse list-link--scroll-right">
+        <a href="/flash/kongelige/udenlandskekongelige/royal-service-faar-leveret-ny-luksusbil-faa-timer-efter-alvorlig-trafikulykke/7481267" class="size1of1  eb-bg--flash list--flex eb-row--itemreverse list-link--scroll-right">
           <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
-    <img src="/incoming/njct29/7480161/IMAGE_ALTERNATES/relationBig_300/dcx-74359417-20190117200900" height="169" width="300"
-      
-    class="list-image size1of1" />
-    </div>
-<div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
-            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <time>50 minutter siden</time></div>
-  <div class="oo-line">
-              Megastjerner hovednavn på dansk festival</div>
-            </div>
-        </a>
-
-      </div>
-
-    <div class="list-item--scroll eb-bg--black list-item--scroll-right">
-
-        <a href="/nyheder/samfund/danskere-stopper-stripshow-de-er-roede-over-det-hele/7479219" class="size1of1  eb-bg--black list--flex eb-row--itemreverse list-link--scroll-right">
-          <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
-    <img src="/incoming/1h3zqp/7479166/IMAGE_ALTERNATES/relationBig_300/desktop-20190117143953" height="169" width="300"
+    <img src="/incoming/w5x1x7/7481244/IMAGE_ALTERNATES/relationBig_300/dcx-75087767-20190118154706" height="169" width="300"
       
     class="list-image size1of1" />
     <div class="indicator-overlay indicator-video"></div>
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <time>58 minutter siden</time></div>
+      <time>26 minutter siden</time></div>
   <div class="oo-line">
-              Danskere stopper 'stripshow': - De er røde over det hele</div>
+              Royal service: Får leveret ny luksusbil få timer efter alvorlig trafikulykke</div>
             </div>
         </a>
 
@@ -524,108 +549,71 @@
 
     <div class="list-item--scroll eb-bg--black list-item--scroll-right">
 
-        <a href="/nyheder/samfund/kriseberedskab-i-opraab-til-danskerne-taenk-jer-nu-om/7479549" class="size1of1  eb-bg--black list--flex eb-row--itemreverse list-link--scroll-right">
+        <a href="/nyheder/videnskab_og_teknik/forskere-oprettede-dating-profil-til-sjaelden-froe/7479305" class="size1of1  eb-bg--black list--flex eb-row--itemreverse list-link--scroll-right">
           <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
-    <img src="/incoming/p6bfu/7417667/IMAGE_ALTERNATES/relationBig_300/dcx-15690131-20181129133241" height="169" width="300"
+    <img src="/incoming/kmwd6m/7479281/IMAGE_ALTERNATES/relationBig_300/dcx-75080643-20190117154200" height="169" width="300"
       
     class="list-image size1of1" />
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <time>1 time siden</time></div>
+      <time>39 minutter siden</time></div>
   <div class="oo-line">
-              Kriseberedskab i opråb til danskerne: Tænk jer nu om</div>
+              Forskere oprettede dating-profil til sjælden frø</div>
             </div>
         </a>
 
       </div>
 
-    <div class="list-item--scroll eb-bg--black list-item--scroll-right">
+    <div class="list-item--scroll eb-bg--sport list-item--scroll-right">
 
-        <a href="/nyheder/samfund/varsel-vindfoelsomme-koeretoejer-fraraades-paa-storebaeltsbroen/7480164" class="size1of1  eb-bg--black list--flex eb-row--itemreverse list-link--scroll-right">
+        <a href="/sport/anden_sport/boksning/live-foerste-mand-til-taelling/7472458" class="size1of1  eb-bg--sport list--flex eb-row--itemreverse list-link--scroll-right">
           <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
-    <img src="/incoming/xm4iel/7138606/IMAGE_ALTERNATES/relationBig_300/storm" height="169" width="300"
+    <img src="/incoming/cdkh69/7479364/IMAGE_ALTERNATES/relationBig_300/dcx-75080685-20190117155709" height="169" width="300"
       
     class="list-image size1of1" />
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <time>1 time siden</time></div>
+      <time>41 minutter siden</time></div>
   <div class="oo-line">
-              Varsel: Vindfølsomme køretøjer frarådes på Storebæltsbroen</div>
+              LIVE: Første mand til tælling</div>
             </div>
         </a>
 
       </div>
 
-    <div class="list-item--scroll eb-bg--black list-item--scroll-right">
+    <div class="list-item--scroll eb-bg--sport list-item--scroll-right">
 
-        <a href="/nyheder/politik/danskpolitik/thyra-frank-traekker-lovforslag-om-tilsynspolitik/7479851" class="size1of1  eb-bg--black list--flex eb-row--itemreverse list-link--scroll-right">
+        <a href="/sport/anden_sport/boksning/lever-med-enormt-pres-foer-sin-stoerste-kamp-det-stopper-aldrig/7474368" class="size1of1  eb-bg--sport list--flex eb-row--itemreverse list-link--scroll-right">
           <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
-    <img src="/incoming/t8gtoi/7447657/IMAGE_ALTERNATES/relationBig_300/dcx-58993514-20181220163200" height="169" width="300"
+    <img src="/incoming/zdgi00/7474720/IMAGE_ALTERNATES/relationBig_300/dcx-75060691-20190115141606" height="169" width="300"
       
     class="list-image size1of1" />
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <time>1 time siden</time></div>
+      <time>59 minutter siden</time></div>
   <div class="oo-line">
-              Thyra Frank trækker lovforslag om tilsynspolitik</div>
-            </div>
-        </a>
-
-      </div>
-
-    <div class="list-item--scroll eb-bg--black list-item--scroll-right">
-
-        <a href="/nyheder/politik/danskpolitik/styrelse-retter-skarp-kritik-regnskabs-kaos-i-a-kasse/7479417" class="size1of1  eb-bg--black list--flex eb-row--itemreverse list-link--scroll-right">
-          <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
-    <img src="/incoming/9d4czg/7436794/IMAGE_ALTERNATES/relationBig_300/dcx-74929464-20181212194500" height="169" width="300"
-      
-    class="list-image size1of1" />
-    </div>
-<div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
-            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <time>1 time siden</time></div>
-  <div class="oo-line">
-              Styrelse retter skarp kritik: Regnskabs-kaos i a-kasse</div>
-            </div>
-        </a>
-
-      </div>
-
-    <div class="list-item--scroll eb-bg--black list-item--scroll-right">
-
-        <a href="/nyheder/politik/danskpolitik/i-danmark-giver-vi-haand-saadan-er-det/7479852" class="size1of1  eb-bg--black list--flex eb-row--itemreverse list-link--scroll-right">
-          <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
-    <img src="/incoming/yx3et7/7479778/IMAGE_ALTERNATES/relationBig_300/dcx-75080654-20190117175300" height="169" width="300"
-      
-    class="list-image size1of1" />
-    <div class="indicator-overlay indicator-video"></div>
-    </div>
-<div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
-            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <time>1 time siden</time></div>
-  <div class="oo-line">
-              I Danmark giver vi hånd - sådan er det</div>
+              Lever med enormt pres før sin største kamp: - Det stopper aldrig</div>
             </div>
         </a>
 
       </div>
 
     </div>
-  <div class="fade-right" id="scrH8W4b2Hioollid_fade"></div>
-      <div class="btn-scroll-left" id="prev_scrH8W4b2Hioollid"><i class="fas fa-caret-left"></i></div>
-      <div class="btn-scroll-right" id="next_scrH8W4b2Hioollid"><i class="fas fa-caret-right"></i></div>
+  <div class="fade-right" id="scr0LPJlcWLPollid_fade"></div>
+      <div class="btn-scroll-left" id="prev_scr0LPJlcWLPollid"><i class="fas fa-caret-left"></i></div>
+      <div class="btn-scroll-right" id="next_scr0LPJlcWLPollid"><i class="fas fa-caret-right"></i></div>
   </div>
 <script>
     window.addEventListener('isEBReady', function() {
       new window.ebLib.ListHorizontal({
-        'elId': 'scrH8W4b2Hioollid',
+        'elId': 'scr0LPJlcWLPollid',
         'listCount': parseFloat('10'),
         'isListEkstra': 'false' === true,
-        'scrollMoverId': 'scroll_scrH8W4b2Hioollid',
-        'scrollWrapperId': 'scroll_scrH8W4b2Hioollid_wrapper'
+        'scrollMoverId': 'scroll_scr0LPJlcWLPollid',
+        'scrollWrapperId': 'scroll_scr0LPJlcWLPollid_wrapper'
       });
     }, false);
   </script>
@@ -637,47 +625,47 @@
                 <div class="oo-lastUnit">
                     <div class="tickerline ticker-outer-container ticker-outer-container" id="fnTicker">
         <ul class="ticker-content-container ticker-content-container" id="fnTickerList">
-            <a class="ticker-item d-block  eb-bg--white" href="https://ekstrabladet.dk/112/anholdt-24-aarig-sigtes-for-to-skyderier-paa-noerrebro-med-ak-47-automatriffel/7479392">
-    <span class="tickersection black eb-color--black">112</span>
+            <a class="ticker-item d-block  eb-bg--white" href="https://ekstrabladet.dk/nyheder/krigogkatastrofer/russisk-mand-ville-draebe-flest-muligt-i-norsk-supermarked/7481349">
+    <span class="tickersection black eb-color--black">Krig & katastrofer</span>
     <span class="tickertimestamp">
-        12 minutter siden</span>
+        2 timer siden</span>
     <span class="tickerheadline">
-      Anholdt 24-årig sigtes for to skyderier på Nørrebro med AK 47 automatriffel</span>
+      Russisk mand ville dræbe flest muligt i norsk supermarked</span>
 </a>
-<a class="ticker-item d-block  eb-bg--white" href="https://ekstrabladet.dk/nyheder/samfund/danskere-stopper-stripshow-de-er-roede-over-det-hele/7479219">
+<a class="ticker-item d-block  eb-bg--white" href="https://ekstrabladet.dk/sport/haandbold/vm-skandale-spanske-spillere-paa-hospitalet-efter-uheld/7481448">
+    <span class="tickersection sport eb-color--sport">Håndbold</span>
+    <span class="tickertimestamp">
+        20 minutter siden</span>
+    <span class="tickerheadline">
+      VM-skandale! Spanske spillere på hospitalet efter uheld</span>
+</a>
+<a class="ticker-item d-block  eb-bg--white" href="https://ekstrabladet.dk/nyheder/samfund/trump-skal-droefte-nedrustning-med-kim-jong-uns-hoejre-haand/7481447">
     <span class="tickersection black eb-color--black">Samfund</span>
+    <span class="tickertimestamp">
+        42 minutter siden</span>
+    <span class="tickerheadline">
+      Trump skal drøfte nedrustning med Kim Jong-uns højre hånd</span>
+</a>
+<a class="ticker-item d-block  eb-bg--white" href="https://ekstrabladet.dk/112/efter-et-halvt-aar-med-forbud-12-har-faaet-burka-boede/7481442">
+    <span class="tickersection black eb-color--black">112</span>
     <span class="tickertimestamp">
         59 minutter siden</span>
     <span class="tickerheadline">
-      Danskere stopper 'stripshow': - De er røde over det hele</span>
+      Efter et halvt år med forbud: 12 har fået burka-bøde</span>
 </a>
-<a class="ticker-item d-block  eb-bg--white" href="https://ekstrabladet.dk/flash/kultur/megastjerner-hovednavn-paa-dansk-festival/7480166">
-    <span class="tickersection flash eb-color--flash">Event & Kultur</span>
-    <span class="tickertimestamp">
-        51 minutter siden</span>
-    <span class="tickerheadline">
-      Megastjerner hovednavn på dansk festival</span>
-</a>
-<a class="ticker-item d-block  eb-bg--white" href="https://ekstrabladet.dk/nyheder/samfund/nerver-af-staal-her-dykker-de-med-den-stoerste-hvidhaj-nogensinde-fanget-paa-kamera/7479251">
+<a class="ticker-item d-block  eb-bg--white" href="https://ekstrabladet.dk/nyheder/samfund/rusland-frygter-nyt-vaabenkaploeb-fra-trump/7481437">
     <span class="tickersection black eb-color--black">Samfund</span>
     <span class="tickertimestamp">
-        41 minutter siden</span>
+        1 time siden</span>
     <span class="tickerheadline">
-      Nerver af stål: Her dykker de med den største hvidhaj nogensinde fanget på kamera</span>
+      Rusland frygter nyt våbenkapløb fra Trump</span>
 </a>
-<a class="ticker-item d-block  ticker-item--breaking eb-bg--breaking" href="https://ekstrabladet.dk/112/db-cargo-maa-igen-koere-med-saette-og-lommevogne/7480186">
-    <span class="tickersection black eb-color--black">112</span>
+<a class="ticker-item d-block  eb-bg--white" href="https://ekstrabladet.dk/nyheder/krigogkatastrofer/russisk-mand-ville-draebe-flest-muligt-i-norsk-supermarked/7481349">
+    <span class="tickersection black eb-color--black">Krig & katastrofer</span>
     <span class="tickertimestamp">
-        38 minutter siden</span>
+        2 timer siden</span>
     <span class="tickerheadline">
-      DB Cargo må igen køre med sætte- og lommevogne</span>
-</a>
-<a class="ticker-item d-block  eb-bg--white" href="https://ekstrabladet.dk/112/anholdt-24-aarig-sigtes-for-to-skyderier-paa-noerrebro-med-ak-47-automatriffel/7479392">
-    <span class="tickersection black eb-color--black">112</span>
-    <span class="tickertimestamp">
-        12 minutter siden</span>
-    <span class="tickerheadline">
-      Anholdt 24-årig sigtes for to skyderier på Nørrebro med AK 47 automatriffel</span>
+      Russisk mand ville dræbe flest muligt i norsk supermarked</span>
 </a>
 </ul>
     </div>
@@ -1263,8 +1251,62 @@
                     <div class="section-wrapper">
   <div class="sec-fullwidth">
           <div class="section-area section-area--standard">
-                      <div class="list-scroll hover-showbtn--right list-scroll--right" id="scroll_scrTnhiTDNasollid_wrapper">
-  <div class="list--flex eb-row--itemstretch list-scroll-move" id="scroll_scrTnhiTDNasollid">
+                      <div class="list-scroll hover-showbtn--right list-scroll--right" id="scroll_scrEpdQTXnfgollid_wrapper">
+  <div class="list--flex eb-row--itemstretch list-scroll-move" id="scroll_scrEpdQTXnfgollid">
+
+    <div class="list-item--scroll eb-bg--nationen list-item--scroll-right">
+
+        <a href="/nationen/kommune-klager-over-borger-har-angst-faar-kontanthjaelp-og-vil-helst-koere-taxa/7480794" class="size1of1  eb-bg--nationen list--flex eb-row--itemreverse list-link--scroll-right">
+          <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
+    <img src="/incoming/8gz8ns/7480685/IMAGE_ALTERNATES/relationBig_300/dcx-4560688-20190118105300" height="169" width="300"
+      
+    class="list-image size1of1" />
+    </div>
+<div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
+            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
+      <span class=" list-section-separator">nationen</span><time>7 timer siden</time></div>
+  <div class="oo-line">
+              Kommune klager over borger: Har angst, får kontanthjælp og vil helst køre taxa</div>
+            </div>
+        </a>
+
+      </div>
+
+    <div class="list-item--scroll eb-bg--nationen list-item--scroll-right">
+
+        <a href="/nationen/lastvognschauffoer-om-elektriske-loebehjul-i-trafikken-skal-nok-blive-sjovt/7481354" class="size1of1  eb-bg--nationen list--flex eb-row--itemreverse list-link--scroll-right">
+          <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
+    <img src="/incoming/5qisju/7481353/IMAGE_ALTERNATES/relationBig_300/desktop-20190118170132" height="169" width="300"
+      
+    class="list-image size1of1" />
+    </div>
+<div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
+            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
+      <span class=" list-section-separator list-section-separator">nationen</span><time>2 timer siden</time></div>
+  <div class="oo-line">
+              Lastvognschauffør om elektriske løbehjul i trafikken: Skal nok blive sjovt</div>
+            </div>
+        </a>
+
+      </div>
+
+    <div class="list-item--scroll eb-bg--nationen list-item--scroll-right">
+
+        <a href="/nationen/chefredaktoer-til-toerklaede-hidsige-bjarne-du-lever-i-et-multikulturelt-samfund/7480971" class="size1of1  eb-bg--nationen list--flex eb-row--itemreverse list-link--scroll-right">
+          <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
+    <img src="/incoming/8kpvhz/7373173/IMAGE_ALTERNATES/relationBig_300/dcx-1736633-20181029093900" height="169" width="300"
+      
+    class="list-image size1of1" />
+    </div>
+<div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
+            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
+      <span class=" list-section-separator list-section-separator list-section-separator">nationen</span><time>5 timer siden</time></div>
+  <div class="oo-line">
+              Chefredaktør til tørklæde-hidsige Bjarne: Du lever i et multikulturelt samfund</div>
+            </div>
+        </a>
+
+      </div>
 
     <div class="list-item--scroll eb-bg--nationen list-item--scroll-right">
 
@@ -1277,7 +1319,7 @@
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator">nationen</span><time>10 timer siden</time></div>
+      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>17. jan. 2019 - kl. 11:20</time></div>
   <div class="oo-line">
               Gad ikke have den borger: Kommune afleverede 'den' på jobcenteret i anden kommune</div>
             </div>
@@ -1295,7 +1337,7 @@
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator list-section-separator">nationen</span><time>7 timer siden</time></div>
+      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>17. jan. 2019 - kl. 14:09</time></div>
   <div class="oo-line">
               William sur på McDonald’s i Kastrup: Fik ikke annulleret p-bøde som han plejer</div>
             </div>
@@ -1314,7 +1356,7 @@
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator list-section-separator list-section-separator">nationen</span><time>5 timer siden</time></div>
+      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>17. jan. 2019 - kl. 16:10</time></div>
   <div class="oo-line">
               Vil ikke betjenes af tørklæde-pige: Nu vil Føtex ikke have Bjarne som kunde</div>
             </div>
@@ -1332,7 +1374,7 @@
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>16. jan. 2019 - kl. 11:18</time></div>
+      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>16. jan. 2019 - kl. 11:18</time></div>
   <div class="oo-line">
               Sikandar før statsborger-fest: Et high-five er også  håndflade mod håndflade</div>
             </div>
@@ -1351,7 +1393,7 @@
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>15. jan. 2019 - kl. 15:10</time></div>
+      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>15. jan. 2019 - kl. 15:10</time></div>
   <div class="oo-line">
               Ingen kendte ham rigtigt: Død eneboer efterlader millioner </div>
             </div>
@@ -1369,7 +1411,7 @@
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>15. jan. 2019 - kl. 10:30</time></div>
+      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>15. jan. 2019 - kl. 10:30</time></div>
   <div class="oo-line">
               Politiet truer Knud: Byg et skur eller vi tager dine skotske køer</div>
             </div>
@@ -1388,7 +1430,7 @@
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>15. jan. 2019 - kl. 13:27</time></div>
+      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>15. jan. 2019 - kl. 13:27</time></div>
   <div class="oo-line">
               Stop nu: Jeanette synes medier kører skræmmekampagne om brexit </div>
             </div>
@@ -1406,7 +1448,7 @@
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>14. jan. 2019 - kl. 16:00</time></div>
+      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>14. jan. 2019 - kl. 16:00</time></div>
   <div class="oo-line">
               Kontanthjælps-Helge klager over opsparing: 121.549 kr blev til 10.000</div>
             </div>
@@ -1424,7 +1466,7 @@
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>14. jan. 2019 - kl. 11:26</time></div>
+      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>14. jan. 2019 - kl. 11:26</time></div>
   <div class="oo-line">
               Flemming købte savsmuldsbriket i jem & fix: Meget vigtigt vi får den tilbage</div>
             </div>
@@ -1442,7 +1484,7 @@
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>11. jan. 2019 - kl. 15:35</time></div>
+      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>11. jan. 2019 - kl. 15:35</time></div>
   <div class="oo-line">
               Raser mod kommunen: Heidi har 500 kr., men den rådne tand koster 10.000 at lave </div>
             </div>
@@ -1460,7 +1502,7 @@
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>11. jan. 2019 - kl. 11:21</time></div>
+      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>11. jan. 2019 - kl. 11:21</time></div>
   <div class="oo-line">
               Det bedste ved at tage på arbejde?: Læs prostitueret kvindes ærlige svar</div>
             </div>
@@ -1478,7 +1520,7 @@
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>10. jan. 2019 - kl. 10:21</time></div>
+      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>10. jan. 2019 - kl. 10:21</time></div>
   <div class="oo-line">
               Tre års fængsel til konen: Bad manden skifte tøj</div>
             </div>
@@ -1496,7 +1538,7 @@
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>10. jan. 2019 - kl. 13:48</time></div>
+      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>10. jan. 2019 - kl. 13:48</time></div>
   <div class="oo-line">
               Kommune i tvivl: Skal somalisk familie uden opholdstilladelse have kontanthjælp?</div>
             </div>
@@ -1514,7 +1556,7 @@
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>10. jan. 2019 - kl. 17:06</time></div>
+      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>10. jan. 2019 - kl. 17:06</time></div>
   <div class="oo-line">
               Genbrugsbutik fandt stort  pengebeløb i pose med tøj: Seks har henvendt sig</div>
             </div>
@@ -1532,7 +1574,7 @@
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>9. jan. 2019 - kl. 13:29</time></div>
+      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>9. jan. 2019 - kl. 13:29</time></div>
   <div class="oo-line">
               Haps: Først tog Danske Bank Kenneds arv og så tog de Melanies dagpleje-penge</div>
             </div>
@@ -1550,7 +1592,7 @@
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>9. jan. 2019 - kl. 17:20</time></div>
+      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>9. jan. 2019 - kl. 17:20</time></div>
   <div class="oo-line">
               Hvad fanden sker der: Nybagt mor skal udvises - fra Sverige</div>
             </div>
@@ -1568,7 +1610,7 @@
     </div>
 <div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>9. jan. 2019 - kl. 11:41</time></div>
+      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>9. jan. 2019 - kl. 11:41</time></div>
   <div class="oo-line">
               Døren til helvede: Sådan får Hizb ut-Tahrir 100.000 danske medlemmer</div>
             </div>
@@ -1576,73 +1618,19 @@
 
       </div>
 
-    <div class="list-item--scroll eb-bg--nationen list-item--scroll-right">
-
-        <a href="/nationen/politiet-skal-ikke-kalde-bilist-for-dum-boede-paa-4000-kr.-skaber-debat/7463941" class="size1of1  eb-bg--nationen list--flex eb-row--itemreverse list-link--scroll-right">
-          <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
-    <img src="/incoming/io4mee/7465315/IMAGE_ALTERNATES/relationBig_300/desktop-20190108143430" height="169" width="300"
-      
-    class="list-image size1of1" />
     </div>
-<div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
-            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>8. jan. 2019 - kl. 14:47</time></div>
-  <div class="oo-line">
-              Politiet skal ikke kalde bilist for dum: Bøde på 4000 kr. skaber debat</div>
-            </div>
-        </a>
-
-      </div>
-
-    <div class="list-item--scroll eb-bg--nationen list-item--scroll-right">
-
-        <a href="/nationen/nyt-dagsgebyr-truer-50.000-danske-koeretoejer-det-kan-selvfoelgelig-loebe-op/7464129" class="size1of1  eb-bg--nationen list--flex eb-row--itemreverse list-link--scroll-right">
-          <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
-    <img src="/incoming/xqesb1/7331694/IMAGE_ALTERNATES/relationBig_300/taet-trafik-paa-h.c.-andersens-boulevard" height="169" width="300"
-      
-    class="list-image size1of1" />
-    </div>
-<div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
-            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>8. jan. 2019 - kl. 10:31</time></div>
-  <div class="oo-line">
-              Nyt dagsgebyr truer 50.000 danske køretøjer: Det kan selvfølgelig løbe op</div>
-            </div>
-        </a>
-
-      </div>
-
-    <div class="list-item--scroll eb-bg--nationen list-item--scroll-right">
-
-        <a href="/nationen/tjener-mere-nu-pia-har-faaet-lov-til-at-arbejde-tre-timer-ekstra-hver-uge/7461645" class="size1of1  eb-bg--nationen list--flex eb-row--itemreverse list-link--scroll-right">
-          <div class="list-image-wrapper list--flex-item list-image-wrapper--half list--flex-item--top">
-    <img src="/nyheder/erhverv/epn/5n5v3m/6574097/IMAGE_ALTERNATES/relationBig_300/travl-stress-kontor-version2" height="169" width="300"
-      
-    class="list-image size1of1" />
-    </div>
-<div class="list--flex-item eb-row-item--grow list-text list-text--scroll">
-            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator list-section-separator">nationen</span><time>7. jan. 2019 - kl. 16:57</time></div>
-  <div class="oo-line">
-              Tjener mere nu: Pia har fået lov til at arbejde tre timer ekstra hver uge</div>
-            </div>
-        </a>
-
-      </div>
-
-    </div>
-  <div class="fade-right" id="scrTnhiTDNasollid_fade"></div>
-      <div class="btn-scroll-left" id="prev_scrTnhiTDNasollid"><i class="fas fa-caret-left"></i></div>
-      <div class="btn-scroll-right" id="next_scrTnhiTDNasollid"><i class="fas fa-caret-right"></i></div>
+  <div class="fade-right" id="scrEpdQTXnfgollid_fade"></div>
+      <div class="btn-scroll-left" id="prev_scrEpdQTXnfgollid"><i class="fas fa-caret-left"></i></div>
+      <div class="btn-scroll-right" id="next_scrEpdQTXnfgollid"><i class="fas fa-caret-right"></i></div>
   </div>
 <script>
     window.addEventListener('isEBReady', function() {
       new window.ebLib.ListHorizontal({
-        'elId': 'scrTnhiTDNasollid',
+        'elId': 'scrEpdQTXnfgollid',
         'listCount': parseFloat('20'),
         'isListEkstra': 'false' === true,
-        'scrollMoverId': 'scroll_scrTnhiTDNasollid',
-        'scrollWrapperId': 'scroll_scrTnhiTDNasollid_wrapper'
+        'scrollMoverId': 'scroll_scrEpdQTXnfgollid',
+        'scrollWrapperId': 'scroll_scrEpdQTXnfgollid_wrapper'
       });
     }, false);
   </script>
@@ -1654,18 +1642,17 @@
 
   <div class="list--flex list-item  eb-color--black">
 
-        <a href="/nationen/gad-ikke-have-den-borger-kommune-afleverede-den-paa-jobcenteret-i-anden-kommune/7478702" class="size1of1 eb-color--black">
+        <a href="/nationen/kommune-klager-over-borger-har-angst-faar-kontanthjaelp-og-vil-helst-koere-taxa/7480794" class="size1of1 eb-color--black">
           <div class="list-image-wrapper">
-    <img src="/incoming/2lbg6y/6915473/IMAGE_ALTERNATES/relationBig/genrebilleder-fra-jobcenter" height="338" width="600"
+    <img src="/incoming/8gz8ns/7480685/IMAGE_ALTERNATES/relationBig/dcx-4560688-20190118105300" height="338" width="600"
       
     class="list-image size1of1" />
-    <div class="indicator-overlay indicator-video"></div>
     </div>
 <div class="list--flex-item eb-row-item--grow list-text ">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" eb-color--nationen list-section-separator">nationen</span><time>10 timer siden</time></div>
+      <span class=" eb-color--nationen list-section-separator">nationen</span><time>7 timer siden</time></div>
   <div class="oo-line">
-              Gad ikke have den borger: Kommune afleverede 'den' på jobcenteret i anden kommune</div>
+              Kommune klager over borger: Har angst, får kontanthjælp og vil helst køre taxa</div>
             </div>
         </a>
 
@@ -1674,15 +1661,71 @@
       <div class="list--flex eb-row--itemstretch size1of1">
       <div class="list--flex list-item  list--flex eb-items--top list-item list-item--column eb-row-item--grow size1of2 eb-color--black">
 
-        <a href="/nationen/william-sur-paa-mcdonalds-i-kastrup-fik-ikke-annulleret-p-boede-som-han-plejer/7479130" class="size1of1 eb-color--black">
+        <a href="/nationen/lastvognschauffoer-om-elektriske-loebehjul-i-trafikken-skal-nok-blive-sjovt/7481354" class="size1of1 eb-color--black">
           <div class="list-image-wrapper">
+    <img src="/incoming/5qisju/7481353/IMAGE_ALTERNATES/relationBig/desktop-20190118170132" height="338" width="600"
+      
+    class="list-image size1of1" />
+    </div>
+<div class="list--flex-item eb-row-item--grow list-text ">
+            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
+      <span class=" eb-color--nationen list-section-separator">nationen</span><time>2 timer siden</time></div>
+  <div class="oo-line">
+              Lastvognschauffør om elektriske løbehjul i trafikken: Skal nok blive sjovt</div>
+            </div>
+        </a>
+
+      </div>
+
+      <div class="list--flex list-item  list--flex eb-items--top list-item list-item--column eb-row-item--grow size1of2 eb-color--black">
+
+        <a href="/nationen/chefredaktoer-til-toerklaede-hidsige-bjarne-du-lever-i-et-multikulturelt-samfund/7480971" class="size1of1 eb-color--black">
+          <div class="list-image-wrapper">
+    <img src="/incoming/8kpvhz/7373173/IMAGE_ALTERNATES/relationBig/dcx-1736633-20181029093900" height="338" width="600"
+      
+    class="list-image size1of1" />
+    </div>
+<div class="list--flex-item eb-row-item--grow list-text ">
+            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
+      <span class=" eb-color--nationen list-section-separator">nationen</span><time>5 timer siden</time></div>
+  <div class="oo-line">
+              Chefredaktør til tørklæde-hidsige Bjarne: Du lever i et multikulturelt samfund</div>
+            </div>
+        </a>
+
+      </div>
+
+      </div>
+      <div class="list--flex list-item  eb-color--black">
+
+        <a href="/nationen/gad-ikke-have-den-borger-kommune-afleverede-den-paa-jobcenteret-i-anden-kommune/7478702" class="list--flex size1of1 eb-color--black">
+          <div class="list-image-wrapper list--flex-item list-image-wrapper--half">
+    <img src="/incoming/2lbg6y/6915473/IMAGE_ALTERNATES/relationBig/genrebilleder-fra-jobcenter" height="338" width="600"
+      
+    class="list-image size1of1" />
+    <div class="indicator-overlay indicator-video"></div>
+    </div>
+<div class="list--flex-item eb-row-item--grow list-text ">
+            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
+      <span class=" eb-color--nationen list-section-separator">nationen</span><time>17. jan. 2019 - kl. 11:20</time></div>
+  <div class="oo-line">
+              Gad ikke have den borger: Kommune afleverede 'den' på jobcenteret i anden kommune</div>
+            </div>
+        </a>
+
+      </div>
+
+      <div class="list--flex list-item  eb-color--black">
+
+        <a href="/nationen/william-sur-paa-mcdonalds-i-kastrup-fik-ikke-annulleret-p-boede-som-han-plejer/7479130" class="list--flex eb-row--itemreverse size1of1 eb-color--black">
+          <div class="list-image-wrapper list--flex-item list-image-wrapper--half">
     <img src="/incoming/zhnmto/7479021/IMAGE_ALTERNATES/relationBig/dcx-75079599-20190117131600" height="338" width="600"
       
     class="list-image size1of1" />
     </div>
 <div class="list--flex-item eb-row-item--grow list-text ">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" eb-color--nationen list-section-separator">nationen</span><time>7 timer siden</time></div>
+      <span class=" eb-color--nationen list-section-separator">nationen</span><time>17. jan. 2019 - kl. 14:09</time></div>
   <div class="oo-line">
               William sur på McDonald’s i Kastrup: Fik ikke annulleret p-bøde som han plejer</div>
             </div>
@@ -1690,7 +1733,8 @@
 
       </div>
 
-      <div class="list--flex list-item  list--flex eb-items--top list-item list-item--column eb-row-item--grow size1of2 eb-color--black">
+      <div class="list--flex eb-row--itemstretch size1of1">
+      <div class="list--flex list-item  list--flex eb-items--top list-item list-item--column eb-row-item--grow size1of3 eb-color--black">
 
         <a href="/nationen/vil-ikke-betjenes-af-toerklaede-pige-nu-vil-foetex-ikke-have-bjarne-som-kunde/7479395" class="size1of1 eb-color--black">
           <div class="list-image-wrapper">
@@ -1701,7 +1745,7 @@
     </div>
 <div class="list--flex-item eb-row-item--grow list-text ">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" eb-color--nationen list-section-separator">nationen</span><time>5 timer siden</time></div>
+      <span class=" eb-color--nationen list-section-separator">nationen</span><time>17. jan. 2019 - kl. 16:10</time></div>
   <div class="oo-line">
               Vil ikke betjenes af tørklæde-pige: Nu vil Føtex ikke have Bjarne som kunde</div>
             </div>
@@ -1709,11 +1753,10 @@
 
       </div>
 
-      </div>
-      <div class="list--flex list-item  eb-color--black">
+      <div class="list--flex list-item  list--flex eb-items--top list-item list-item--column eb-row-item--grow size1of3 eb-color--black">
 
-        <a href="/nationen/sikandar-foer-statsborger-fest-et-high-five-er-ogsaa-haandflade-mod-haandflade/7475263" class="list--flex size1of1 eb-color--black">
-          <div class="list-image-wrapper list--flex-item list-image-wrapper--half">
+        <a href="/nationen/sikandar-foer-statsborger-fest-et-high-five-er-ogsaa-haandflade-mod-haandflade/7475263" class="size1of1 eb-color--black">
+          <div class="list-image-wrapper">
     <img src="/incoming/mjrgt9/7475241/IMAGE_ALTERNATES/relationBig/dcx-75061049-20190115163100" height="338" width="600"
       
     class="list-image size1of1" />
@@ -1728,10 +1771,10 @@
 
       </div>
 
-      <div class="list--flex list-item  eb-color--black">
+      <div class="list--flex list-item  list--flex eb-items--top list-item list-item--column eb-row-item--grow size1of3 eb-color--black">
 
-        <a href="/nationen/ingen-kendte-ham-rigtigt-doed-eneboer-efterlader-millioner/7474838" class="list--flex eb-row--itemreverse size1of1 eb-color--black">
-          <div class="list-image-wrapper list--flex-item list-image-wrapper--half">
+        <a href="/nationen/ingen-kendte-ham-rigtigt-doed-eneboer-efterlader-millioner/7474838" class="size1of1 eb-color--black">
+          <div class="list-image-wrapper">
     <img src="/incoming/it5ztd/7474799/IMAGE_ALTERNATES/relationBig/dcx-75060274-20190115144600" height="338" width="600"
       
     class="list-image size1of1" />
@@ -1742,62 +1785,6 @@
       <span class=" eb-color--nationen list-section-separator">nationen</span><time>15. jan. 2019 - kl. 15:10</time></div>
   <div class="oo-line">
               Ingen kendte ham rigtigt: Død eneboer efterlader millioner </div>
-            </div>
-        </a>
-
-      </div>
-
-      <div class="list--flex eb-row--itemstretch size1of1">
-      <div class="list--flex list-item  list--flex eb-items--top list-item list-item--column eb-row-item--grow size1of3 eb-color--black">
-
-        <a href="/nationen/politiet-truer-knud-byg-et-skur-eller-vi-tager-dine-skotske-koeer/7473091" class="size1of1 eb-color--black">
-          <div class="list-image-wrapper">
-    <img src="/incoming/zdullu/7474006/IMAGE_ALTERNATES/relationBig/dcx-75059183-20190115100601" height="338" width="600"
-      
-    class="list-image size1of1" />
-    </div>
-<div class="list--flex-item eb-row-item--grow list-text ">
-            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" eb-color--nationen list-section-separator">nationen</span><time>15. jan. 2019 - kl. 10:30</time></div>
-  <div class="oo-line">
-              Politiet truer Knud: Byg et skur eller vi tager dine skotske køer</div>
-            </div>
-        </a>
-
-      </div>
-
-      <div class="list--flex list-item  list--flex eb-items--top list-item list-item--column eb-row-item--grow size1of3 eb-color--black">
-
-        <a href="/nationen/stop-nu-jeanette-synes-medier-koerer-skraemmekampagne-om-brexit/7474349" class="size1of1 eb-color--black">
-          <div class="list-image-wrapper">
-    <img src="/nyheder/erhverv/epn/p64w6m/7440087/IMAGE_ALTERNATES/relationBig/desktop-20181214155800" height="338" width="600"
-      
-    class="list-image size1of1" />
-    <div class="indicator-overlay indicator-video"></div>
-    </div>
-<div class="list--flex-item eb-row-item--grow list-text ">
-            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" eb-color--nationen list-section-separator">nationen</span><time>15. jan. 2019 - kl. 13:27</time></div>
-  <div class="oo-line">
-              Stop nu: Jeanette synes medier kører skræmmekampagne om brexit </div>
-            </div>
-        </a>
-
-      </div>
-
-      <div class="list--flex list-item  list--flex eb-items--top list-item list-item--column eb-row-item--grow size1of3 eb-color--black">
-
-        <a href="/nationen/kontanthjaelps-helge-klager-over-opsparing-121.549-kr-blev-til-10.000/7472799" class="size1of1 eb-color--black">
-          <div class="list-image-wrapper">
-    <img src="/incoming/uor0ip/7472959/IMAGE_ALTERNATES/relationBig/desktop-20190114153304" height="338" width="600"
-      
-    class="list-image size1of1" />
-    </div>
-<div class="list--flex-item eb-row-item--grow list-text ">
-            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" eb-color--nationen list-section-separator">nationen</span><time>14. jan. 2019 - kl. 16:00</time></div>
-  <div class="oo-line">
-              Kontanthjælps-Helge klager over opsparing: 121.549 kr blev til 10.000</div>
             </div>
         </a>
 
@@ -1817,6 +1804,55 @@
   <div class="list-wrapper--expandable list-wrapper list-wrapper--standard">
 
     <div class="list-item">
+        <a href="/nationen/politiet-truer-knud-byg-et-skur-eller-vi-tager-dine-skotske-koeer/7473091" class="list-link--standard list--flex size1of1  eb-color--black">
+          <div class="list-image-wrapper list--flex-item list-image-wrapper--small">
+    <img src="/incoming/zdullu/7474006/IMAGE_ALTERNATES/relationSmall_150/dcx-75059183-20190115100601" height="84" width="150"
+      
+    class="list-image size1of1" />
+    </div>
+<div class="list--flex-item eb-row-item--grow list-text pad-m--l pad-s--tb">
+            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
+      <span class=" eb-color--nationen">nationen</span></div>
+  <div class="oo-line">
+              Politiet truer Knud: Byg et skur eller vi tager dine skotske køer</div>
+            </div>
+        </a>
+
+      </div>
+        <div class="list-item">
+        <a href="/nationen/stop-nu-jeanette-synes-medier-koerer-skraemmekampagne-om-brexit/7474349" class="list-link--standard list--flex size1of1  eb-color--black">
+          <div class="list-image-wrapper list--flex-item list-image-wrapper--small">
+    <img src="/nyheder/erhverv/epn/p64w6m/7440087/IMAGE_ALTERNATES/relationSmall_150/desktop-20181214155800" height="84" width="150"
+      
+    class="list-image size1of1" />
+    <div class="indicator-overlay indicator-video indicator-small"></div>
+    </div>
+<div class="list--flex-item eb-row-item--grow list-text pad-m--l pad-s--tb">
+            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
+      <span class=" eb-color--nationen">nationen</span></div>
+  <div class="oo-line">
+              Stop nu: Jeanette synes medier kører skræmmekampagne om brexit </div>
+            </div>
+        </a>
+
+      </div>
+        <div class="list-item">
+        <a href="/nationen/kontanthjaelps-helge-klager-over-opsparing-121.549-kr-blev-til-10.000/7472799" class="list-link--standard list--flex size1of1  eb-color--black">
+          <div class="list-image-wrapper list--flex-item list-image-wrapper--small">
+    <img src="/incoming/uor0ip/7472959/IMAGE_ALTERNATES/relationSmall_150/desktop-20190114153304" height="84" width="150"
+      
+    class="list-image size1of1" />
+    </div>
+<div class="list--flex-item eb-row-item--grow list-text pad-m--l pad-s--tb">
+            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
+      <span class=" eb-color--nationen">nationen</span></div>
+  <div class="oo-line">
+              Kontanthjælps-Helge klager over opsparing: 121.549 kr blev til 10.000</div>
+            </div>
+        </a>
+
+      </div>
+        <div class="list-item">
         <a href="/nationen/flemming-koebte-savsmuldsbriket-i-jem-fix-meget-vigtigt-vi-faar-den-tilbage/7472206" class="list-link--standard list--flex size1of1  eb-color--black">
           <div class="list-image-wrapper list--flex-item list-image-wrapper--small">
     <img src="/incoming/y24l5d/7472135/IMAGE_ALTERNATES/relationSmall_150/dcx-75050255-20190114104600" height="84" width="150"
@@ -1928,7 +1964,8 @@
         </a>
 
       </div>
-        <div class="list-item">
+        <div class="fnExpandable transition-expand">
+      <div class="list-item">
         <a href="/nationen/hvad-fanden-sker-der-nybagt-mor-skal-udvises-fra-sverige/7467070" class="list-link--standard list--flex size1of1  eb-color--black">
           <div class="list-image-wrapper list--flex-item list-image-wrapper--small">
     <img src="/incoming/g1ju1y/6639212/IMAGE_ALTERNATES/relationSmall_150/mor-baby.JPG" height="84" width="150"
@@ -1976,8 +2013,7 @@
         </a>
 
       </div>
-        <div class="fnExpandable transition-expand">
-      <div class="list-item">
+        <div class="list-item">
         <a href="/nationen/nyt-dagsgebyr-truer-50.000-danske-koeretoejer-det-kan-selvfoelgelig-loebe-op/7464129" class="list-link--standard list--flex size1of1  eb-color--black">
           <div class="list-image-wrapper list--flex-item list-image-wrapper--small">
     <img src="/incoming/xqesb1/7331694/IMAGE_ALTERNATES/relationSmall_150/taet-trafik-paa-h.c.-andersens-boulevard" height="84" width="150"
@@ -1993,7 +2029,9 @@
         </a>
 
       </div>
-        <div class="list-item">
+        </div>
+        <div class="fnExpandable transition-expand">
+      <div class="list-item">
         <a href="/nationen/tjener-mere-nu-pia-har-faaet-lov-til-at-arbejde-tre-timer-ekstra-hver-uge/7461645" class="list-link--standard list--flex size1of1  eb-color--black">
           <div class="list-image-wrapper list--flex-item list-image-wrapper--small">
     <img src="/nyheder/erhverv/epn/5n5v3m/6574097/IMAGE_ALTERNATES/relationSmall_150/travl-stress-kontor-version2" height="84" width="150"
@@ -2041,9 +2079,7 @@
         </a>
 
       </div>
-        </div>
-        <div class="fnExpandable transition-expand">
-      <div class="list-item">
+        <div class="list-item">
         <a href="/nationen/schaeferen-snoeffe-er-grov-sulten-nu-klager-ejerne-over-bring.dk/7461679" class="list-link--standard list--flex size1of1  eb-color--black">
           <div class="list-image-wrapper list--flex-item list-image-wrapper--small">
     <img src="/incoming/3igww3/7461664/IMAGE_ALTERNATES/relationSmall_150/desktop-20190104164429" height="84" width="150"
@@ -2087,54 +2123,6 @@
       <span class=" eb-color--nationen">nationen</span></div>
   <div class="oo-line">
               6144 udlændinge og 801 våben stoppet på vej ind i Danmark</div>
-            </div>
-        </a>
-
-      </div>
-        <div class="list-item">
-        <a href="/nationen/kvinde-uden-bil-spaerrede-p-plads-i-aarhus-saa-koerte-mandlig-bilist-ind-i-hende/7460178" class="list-link--standard list--flex size1of1  eb-color--black">
-          <div class="list-image-wrapper list--flex-item list-image-wrapper--small">
-    <img src="/incoming/5pjgy0/7460166/IMAGE_ALTERNATES/relationSmall_150/desktop-20190103144448" height="84" width="150"
-      
-    class="list-image size1of1" />
-    </div>
-<div class="list--flex-item eb-row-item--grow list-text pad-m--l pad-s--tb">
-            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" eb-color--nationen">nationen</span></div>
-  <div class="oo-line">
-              Kvinde uden bil spærrede p-plads i Aarhus: Så kørte mandlig bilist ind i hende</div>
-            </div>
-        </a>
-
-      </div>
-        <div class="list-item">
-        <a href="/nationen/sten-vaeltede-og-vil-have-forsikring-for-spildt-mc-saeson-100.000-kr/7434323" class="list-link--standard list--flex size1of1  eb-color--black">
-          <div class="list-image-wrapper list--flex-item list-image-wrapper--small">
-    <img src="/incoming/4x4z2v/7459678/IMAGE_ALTERNATES/relationSmall_150/desktop-20190103102925" height="84" width="150"
-      
-    class="list-image size1of1" />
-    </div>
-<div class="list--flex-item eb-row-item--grow list-text pad-m--l pad-s--tb">
-            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" eb-color--nationen">nationen</span></div>
-  <div class="oo-line">
-              Sten væltede og vil have forsikring for 'spildt MC-sæson': 100.000 kr</div>
-            </div>
-        </a>
-
-      </div>
-        <div class="list-item">
-        <a href="/nationen/gigantisk-museums-projekt-i-koebenhavn-samlingen-har-internationalt-format/7459978" class="list-link--standard list--flex size1of1  eb-color--black">
-          <div class="list-image-wrapper list--flex-item list-image-wrapper--small">
-    <img src="/migration_catalog/article3169412.ece/IMAGE_ALTERNATES/relationSmall_150/No%20name" height="84" width="150"
-      
-    class="list-image size1of1" />
-    </div>
-<div class="list--flex-item eb-row-item--grow list-text pad-m--l pad-s--tb">
-            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      <span class=" eb-color--nationen">nationen</span></div>
-  <div class="oo-line">
-              Gigantisk museums-projekt i København: Samlingen har internationalt format </div>
             </div>
         </a>
 
@@ -2185,23 +2173,6 @@
   </div>
 <div class="fnExpandContainer list-wrapper--expandable list-wrapper list-wrapper--rightcolumn">
   <div class="list-item list-item--rightcolumn eb-color--white">
-        <a href="/nationen/ingen-kendte-ham-rigtigt-doed-eneboer-efterlader-millioner/7474838" class="list--flex size1of1 eb-color--white">
-          <div class="list-image-wrapper list-image-wrapper--small">
-    <img src="/incoming/it5ztd/7474799/IMAGE_ALTERNATES/relationSmall_150/dcx-75060274-20190115144600" height="84" width="150"
-      
-    class="list-image size1of1" />
-    <div class="indicator-overlay indicator-video"></div>
-    </div>
-<div class="list-text list-text--rightcolumn">
-            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      </div>
-  <div class="oo-line">
-              Ingen kendte ham rigtigt: Død eneboer efterlader millioner </div>
-            </div>
-        </a>
-      </div>
-
-    <div class="list-item list-item--rightcolumn eb-color--white">
         <a href="/nationen/vil-ikke-betjenes-af-toerklaede-pige-nu-vil-foetex-ikke-have-bjarne-som-kunde/7479395" class="list--flex size1of1 eb-color--white">
           <div class="list-image-wrapper list-image-wrapper--small">
     <img src="/incoming/knnnkb/7479323/IMAGE_ALTERNATES/relationSmall_150/dcx-71012675-20190117155100" height="84" width="150"
@@ -2235,9 +2206,9 @@
       </div>
 
     <div class="list-item list-item--rightcolumn eb-color--white">
-        <a href="/nationen/politiet-truer-knud-byg-et-skur-eller-vi-tager-dine-skotske-koeer/7473091" class="list--flex size1of1 eb-color--white">
+        <a href="/nationen/kommune-klager-over-borger-har-angst-faar-kontanthjaelp-og-vil-helst-koere-taxa/7480794" class="list--flex size1of1 eb-color--white">
           <div class="list-image-wrapper list-image-wrapper--small">
-    <img src="/incoming/zdullu/7474006/IMAGE_ALTERNATES/relationSmall_150/dcx-75059183-20190115100601" height="84" width="150"
+    <img src="/incoming/8gz8ns/7480685/IMAGE_ALTERNATES/relationSmall_150/dcx-4560688-20190118105300" height="84" width="150"
       
     class="list-image size1of1" />
     </div>
@@ -2245,23 +2216,7 @@
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
       </div>
   <div class="oo-line">
-              Politiet truer Knud: Byg et skur eller vi tager dine skotske køer</div>
-            </div>
-        </a>
-      </div>
-
-    <div class="list-item list-item--rightcolumn eb-color--white">
-        <a href="/nationen/kontanthjaelps-helge-klager-over-opsparing-121.549-kr-blev-til-10.000/7472799" class="list--flex size1of1 eb-color--white">
-          <div class="list-image-wrapper list-image-wrapper--small">
-    <img src="/incoming/uor0ip/7472959/IMAGE_ALTERNATES/relationSmall_150/desktop-20190114153304" height="84" width="150"
-      
-    class="list-image size1of1" />
-    </div>
-<div class="list-text list-text--rightcolumn">
-            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      </div>
-  <div class="oo-line">
-              Kontanthjælps-Helge klager over opsparing: 121.549 kr blev til 10.000</div>
+              Kommune klager over borger: Har angst, får kontanthjælp og vil helst køre taxa</div>
             </div>
         </a>
       </div>
@@ -2278,22 +2233,6 @@
       </div>
   <div class="oo-line">
               William sur på McDonald’s i Kastrup: Fik ikke annulleret p-bøde som han plejer</div>
-            </div>
-        </a>
-      </div>
-
-    <div class="list-item list-item--rightcolumn eb-color--white">
-        <a href="/nationen/flemming-koebte-savsmuldsbriket-i-jem-fix-meget-vigtigt-vi-faar-den-tilbage/7472206" class="list--flex size1of1 eb-color--white">
-          <div class="list-image-wrapper list-image-wrapper--small">
-    <img src="/incoming/y24l5d/7472135/IMAGE_ALTERNATES/relationSmall_150/dcx-75050255-20190114104600" height="84" width="150"
-      
-    class="list-image size1of1" />
-    </div>
-<div class="list-text list-text--rightcolumn">
-            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      </div>
-  <div class="oo-line">
-              Flemming købte savsmuldsbriket i jem & fix: Meget vigtigt vi får den tilbage</div>
             </div>
         </a>
       </div>
@@ -2316,6 +2255,23 @@
       </div>
 
     <div class="list-item list-item--rightcolumn eb-color--white">
+        <a href="/nationen/ingen-kendte-ham-rigtigt-doed-eneboer-efterlader-millioner/7474838" class="list--flex size1of1 eb-color--white">
+          <div class="list-image-wrapper list-image-wrapper--small">
+    <img src="/incoming/it5ztd/7474799/IMAGE_ALTERNATES/relationSmall_150/dcx-75060274-20190115144600" height="84" width="150"
+      
+    class="list-image size1of1" />
+    <div class="indicator-overlay indicator-video"></div>
+    </div>
+<div class="list-text list-text--rightcolumn">
+            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
+      </div>
+  <div class="oo-line">
+              Ingen kendte ham rigtigt: Død eneboer efterlader millioner </div>
+            </div>
+        </a>
+      </div>
+
+    <div class="list-item list-item--rightcolumn eb-color--white">
         <a href="/nationen/det-vaerste-ved-brexit-lottes-engelske-plus-size-toej-bliver-dyrere/7477306" class="list--flex size1of1 eb-color--white">
           <div class="list-image-wrapper list-image-wrapper--small">
     <img src="/incoming/ehw7bf/7477327/IMAGE_ALTERNATES/relationSmall_150/desktop-20190116155332" height="84" width="150"
@@ -2332,9 +2288,9 @@
       </div>
 
     <div class="list-item list-item--rightcolumn eb-color--white">
-        <a href="/nationen/urimeligt-soeger-kontanthjaelp-men-har-formue-paa-700000/6240520" class="list--flex size1of1 eb-color--white">
+        <a href="/nationen/chefredaktoer-til-toerklaede-hidsige-bjarne-du-lever-i-et-multikulturelt-samfund/7480971" class="list--flex size1of1 eb-color--white">
           <div class="list-image-wrapper list-image-wrapper--small">
-    <img src="/incoming/hrwg9v/6234645/IMAGE_ALTERNATES/relationSmall_150/eva-1.JPG" height="84" width="150"
+    <img src="/incoming/8kpvhz/7373173/IMAGE_ALTERNATES/relationSmall_150/dcx-1736633-20181029093900" height="84" width="150"
       
     class="list-image size1of1" />
     </div>
@@ -2342,16 +2298,65 @@
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
       </div>
   <div class="oo-line">
-              Urimeligt: Søger kontanthjælp, men har formue på 700.000</div>
+              Chefredaktør til tørklæde-hidsige Bjarne: Du lever i et multikulturelt samfund</div>
+            </div>
+        </a>
+      </div>
+
+    <div class="list-item list-item--rightcolumn eb-color--white">
+        <a href="/nationen/article4820364.ece" class="list--flex size1of1 eb-color--white">
+          <div class="list-image-wrapper list-image-wrapper--small">
+    <img src="/migration_catalog/article4527417.ece/IMAGE_ALTERNATES/relationSmall_150/mariam" height="84" width="150"
+      
+    class="list-image size1of1" />
+    </div>
+<div class="list-text list-text--rightcolumn">
+            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
+      </div>
+  <div class="oo-line">
+              Socialdemokrat 'brækker sig' over tørklæde-pige</div>
+            </div>
+        </a>
+      </div>
+
+    <div class="list-item list-item--rightcolumn eb-color--white">
+        <a href="/nationen/lastvognschauffoer-om-elektriske-loebehjul-i-trafikken-skal-nok-blive-sjovt/7481354" class="list--flex size1of1 eb-color--white">
+          <div class="list-image-wrapper list-image-wrapper--small">
+    <img src="/incoming/5qisju/7481353/IMAGE_ALTERNATES/relationSmall_150/desktop-20190118170132" height="84" width="150"
+      
+    class="list-image size1of1" />
+    </div>
+<div class="list-text list-text--rightcolumn">
+            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
+      </div>
+  <div class="oo-line">
+              Lastvognschauffør om elektriske løbehjul i trafikken: Skal nok blive sjovt</div>
             </div>
         </a>
       </div>
 
     <div class="fnExpandable transition-expand">
     <div class="list-item list-item--rightcolumn eb-color--white">
-        <a href="/nationen/sikandar-foer-statsborger-fest-et-high-five-er-ogsaa-haandflade-mod-haandflade/7475263" class="list--flex size1of1 eb-color--white">
+        <a href="/nationen/soeren-ville-snyde-fotovogn-endte-med-selv-at-blive-snydt/5822751" class="list--flex size1of1 eb-color--white">
           <div class="list-image-wrapper list-image-wrapper--small">
-    <img src="/incoming/mjrgt9/7475241/IMAGE_ALTERNATES/relationSmall_150/dcx-75061049-20190115163100" height="84" width="150"
+    <img src="/incoming/article5822762.ece/IMAGE_ALTERNATES/relationSmall_150/fotovognalarm.2.JPG" height="84" width="150"
+      
+    class="list-image size1of1" />
+    <div class="indicator-overlay indicator-video"></div>
+    </div>
+<div class="list-text list-text--rightcolumn">
+            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
+      </div>
+  <div class="oo-line">
+              Søren ville snyde fotovogn: Endte med selv at blive snydt</div>
+            </div>
+        </a>
+      </div>
+
+    <div class="list-item list-item--rightcolumn eb-color--white">
+        <a href="/nationen/politiet-truer-knud-byg-et-skur-eller-vi-tager-dine-skotske-koeer/7473091" class="list--flex size1of1 eb-color--white">
+          <div class="list-image-wrapper list-image-wrapper--small">
+    <img src="/incoming/zdullu/7474006/IMAGE_ALTERNATES/relationSmall_150/dcx-75059183-20190115100601" height="84" width="150"
       
     class="list-image size1of1" />
     </div>
@@ -2359,7 +2364,7 @@
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
       </div>
   <div class="oo-line">
-              Sikandar før statsborger-fest: Et high-five er også  håndflade mod håndflade</div>
+              Politiet truer Knud: Byg et skur eller vi tager dine skotske køer</div>
             </div>
         </a>
       </div>
@@ -2381,26 +2386,9 @@
       </div>
 
     <div class="list-item list-item--rightcolumn eb-color--white">
-        <a href="/nationen/soeren-ville-snyde-fotovogn-endte-med-selv-at-blive-snydt/5822751" class="list--flex size1of1 eb-color--white">
+        <a href="/nationen/sikandar-foer-statsborger-fest-et-high-five-er-ogsaa-haandflade-mod-haandflade/7475263" class="list--flex size1of1 eb-color--white">
           <div class="list-image-wrapper list-image-wrapper--small">
-    <img src="/incoming/article5822762.ece/IMAGE_ALTERNATES/relationSmall_150/fotovognalarm.2.JPG" height="84" width="150"
-      
-    class="list-image size1of1" />
-    <div class="indicator-overlay indicator-video"></div>
-    </div>
-<div class="list-text list-text--rightcolumn">
-            <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
-      </div>
-  <div class="oo-line">
-              Søren ville snyde fotovogn: Endte med selv at blive snydt</div>
-            </div>
-        </a>
-      </div>
-
-    <div class="list-item list-item--rightcolumn eb-color--white">
-        <a href="/nationen/article4820364.ece" class="list--flex size1of1 eb-color--white">
-          <div class="list-image-wrapper list-image-wrapper--small">
-    <img src="/migration_catalog/article4527417.ece/IMAGE_ALTERNATES/relationSmall_150/mariam" height="84" width="150"
+    <img src="/incoming/mjrgt9/7475241/IMAGE_ALTERNATES/relationSmall_150/dcx-75061049-20190115163100" height="84" width="150"
       
     class="list-image size1of1" />
     </div>
@@ -2408,7 +2396,7 @@
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
       </div>
   <div class="oo-line">
-              Socialdemokrat 'brækker sig' over tørklæde-pige</div>
+              Sikandar før statsborger-fest: Et high-five er også  håndflade mod håndflade</div>
             </div>
         </a>
       </div>
@@ -2416,9 +2404,9 @@
     </div>
       <div class="fnExpandable transition-expand">
     <div class="list-item list-item--rightcolumn eb-color--white">
-        <a href="/nationen/article4693911.ece" class="list--flex size1of1 eb-color--white">
+        <a href="/nationen/flemming-koebte-savsmuldsbriket-i-jem-fix-meget-vigtigt-vi-faar-den-tilbage/7472206" class="list--flex size1of1 eb-color--white">
           <div class="list-image-wrapper list-image-wrapper--small">
-    <img src="/migration_catalog/article4689588.ece/IMAGE_ALTERNATES/relationSmall_150/mcdonalds-aalborg" height="84" width="150"
+    <img src="/incoming/y24l5d/7472135/IMAGE_ALTERNATES/relationSmall_150/dcx-75050255-20190114104600" height="84" width="150"
       
     class="list-image size1of1" />
     </div>
@@ -2426,24 +2414,23 @@
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
       </div>
   <div class="oo-line">
-              Skam jer: Hele plejehjemmet fik McDonalds mad</div>
+              Flemming købte savsmuldsbriket i jem & fix: Meget vigtigt vi får den tilbage</div>
             </div>
         </a>
       </div>
 
     <div class="list-item list-item--rightcolumn eb-color--white">
-        <a href="/nationen/stop-nu-jeanette-synes-medier-koerer-skraemmekampagne-om-brexit/7474349" class="list--flex size1of1 eb-color--white">
+        <a href="/nationen/kontanthjaelps-helge-klager-over-opsparing-121.549-kr-blev-til-10.000/7472799" class="list--flex size1of1 eb-color--white">
           <div class="list-image-wrapper list-image-wrapper--small">
-    <img src="/nyheder/erhverv/epn/p64w6m/7440087/IMAGE_ALTERNATES/relationSmall_150/desktop-20181214155800" height="84" width="150"
+    <img src="/incoming/uor0ip/7472959/IMAGE_ALTERNATES/relationSmall_150/desktop-20190114153304" height="84" width="150"
       
     class="list-image size1of1" />
-    <div class="indicator-overlay indicator-video"></div>
     </div>
 <div class="list-text list-text--rightcolumn">
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
       </div>
   <div class="oo-line">
-              Stop nu: Jeanette synes medier kører skræmmekampagne om brexit </div>
+              Kontanthjælps-Helge klager over opsparing: 121.549 kr blev til 10.000</div>
             </div>
         </a>
       </div>
@@ -2465,9 +2452,9 @@
       </div>
 
     <div class="list-item list-item--rightcolumn eb-color--white">
-        <a href="/nationen/vibeke-faar-soedt-brev-og-500-kr.-fra-flov-butikstyv-facebook-opslag-virkede/7445751" class="list--flex size1of1 eb-color--white">
+        <a href="/nationen/helt-aerligt-kontanthjaelps-modtagere-kan-ikke-forvente-at-bo-i-centrum/7267949" class="list--flex size1of1 eb-color--white">
           <div class="list-image-wrapper list-image-wrapper--small">
-    <img src="/incoming/gejlz3/7446164/IMAGE_ALTERNATES/relationSmall_150/desktop-20181219162217" height="84" width="150"
+    <img src="/migration_catalog/epn/article4704994.ece/IMAGE_ALTERNATES/relationSmall_150/OK%20Flytning%20Flyttekasser" height="84" width="150"
       
     class="list-image size1of1" />
     </div>
@@ -2475,15 +2462,15 @@
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
       </div>
   <div class="oo-line">
-              Vibeke får sødt brev og 500 kr. fra flov butikstyv: Facebook-opslag virkede</div>
+              Helt ærligt: Kontanthjælps-modtagere kan ikke forvente at bo i centrum</div>
             </div>
         </a>
       </div>
 
     <div class="list-item list-item--rightcolumn eb-color--white">
-        <a href="/nationen/sosu-elevens-varme-hjerte-per-fik-tatoo-med-kommunal-klippekort-ordning/7102243" class="list--flex size1of1 eb-color--white">
+        <a href="/nationen/article4677178.ece" class="list--flex size1of1 eb-color--white">
           <div class="list-image-wrapper list-image-wrapper--small">
-    <img src="/incoming/r37s74/7102236/IMAGE_ALTERNATES/relationSmall_150/doc6zjx5m5hjqbhnnwfz1.jpg" height="84" width="150"
+    <img src="/migration_catalog/NICA/article4673403.ece/IMAGE_ALTERNATES/relationSmall_150/Aftenselskab%20p%C3%A5%20Christiansborg%20Slot" height="84" width="150"
       
     class="list-image size1of1" />
     </div>
@@ -2491,15 +2478,15 @@
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
       </div>
   <div class="oo-line">
-              Sosu-elevens varme hjerte: Per fik tatoo med kommunal  klippekort-ordning</div>
+              Özlem Cekic: Mange tror jeg går uden BH</div>
             </div>
         </a>
       </div>
 
     <div class="list-item list-item--rightcolumn eb-color--white">
-        <a href="/nationen/raser-mod-kommunen-heidi-har-500-kr.-men-den-raadne-tand-koster-10.000-at-lave/7469754" class="list--flex size1of1 eb-color--white">
+        <a href="/nationen/doermand-faar-nok-derfor-afviser-jeg-5-6-indvandrerdrenge/5980177" class="list--flex size1of1 eb-color--white">
           <div class="list-image-wrapper list-image-wrapper--small">
-    <img src="/incoming/d729bu/7469706/IMAGE_ALTERNATES/relationSmall_150/desktop-20190111150356" height="84" width="150"
+    <img src="/incoming/2nxa1r/5980122/IMAGE_ALTERNATES/relationSmall_150/dormand-torklade2.JPG" height="84" width="150"
       
     class="list-image size1of1" />
     </div>
@@ -2507,7 +2494,7 @@
             <div class="list-stamp size1of1 fs-timestamp eb-color--inherit">
       </div>
   <div class="oo-line">
-              Raser mod kommunen: Heidi har 500 kr., men den rådne tand koster 10.000 at lave </div>
+              Dørmand får nok: Derfor afviser jeg 5-6 indvandrerdrenge</div>
             </div>
         </a>
       </div>
@@ -2577,6 +2564,24 @@
   </div>
 <div class="fnExpandContainer list-wrapper--expandable list-wrapper list-wrapper--rightcolumn">
   <div class="list-item list-item--rightcolumn eb-bg--black">
+        <a href="/plus/taet-paa/vild-med-gamle-biler-det-koerer-for-morten/7460363" class="list--flex size1of1 eb-bg--black">
+          <div class="list-image-wrapper list-image-wrapper--small">
+    <img src="/incoming/fz1agq/7460365/IMAGE_ALTERNATES/relationSmall_150/dcx-74981023-20190103162100" height="84" width="150"
+      
+    class="list-image size1of1" />
+    </div>
+<div class="list-text list-text--rightcolumn list-text--ekstra">
+            <div class="list-stamp  size1of1 fs-timestamp">
+      Tæt på</div>
+  <div class="oo-line">
+              <svg viewBox="0 0 100 100" class="ebplus-list">
+                      <use xlink:href="#ebplus_sort"></use>
+                    </svg>Vild med gamle biler: Det kører for Morten</div>
+            </div>
+        </a>
+      </div>
+
+    <div class="list-item list-item--rightcolumn eb-bg--black">
         <a href="/plus/vil-du-laegge-livet-om-faa-inspiration-her/7453749" class="list--flex size1of1 eb-bg--black">
           <div class="list-image-wrapper list-image-wrapper--small">
     <img src="/incoming/gtftgr/7104515/IMAGE_ALTERNATES/relationSmall_150/dansk-vinproduktion" height="84" width="150"
@@ -2648,6 +2653,7 @@
         </a>
       </div>
 
+    <div class="fnExpandable transition-expand">
     <div class="list-item list-item--rightcolumn eb-bg--black">
         <a href="/plus/taet-paa/jens-kurt-saadan-spiste-jeg-mig-ud-af-sukkersyge/7469489" class="list--flex size1of1 eb-bg--black">
           <div class="list-image-wrapper list-image-wrapper--small">
@@ -2666,7 +2672,6 @@
         </a>
       </div>
 
-    <div class="fnExpandable transition-expand">
     <div class="list-item list-item--rightcolumn eb-bg--black">
         <a href="/plus/krop-og-traening/saa-farlig-er-kent-nikolajsens-sygdom/7468749" class="list--flex size1of1 eb-bg--black">
           <div class="list-image-wrapper list-image-wrapper--small">
@@ -2722,6 +2727,8 @@ Det var som en bombe</div>
         </a>
       </div>
 
+    </div>
+      <div class="fnExpandable transition-expand">
     <div class="list-item list-item--rightcolumn eb-bg--black">
         <a href="/plus/taet-paa/boligboelgen-ruller-saadan-har-boligmarkedet-det-i-din-kommune/7444008" class="list--flex size1of1 eb-bg--black">
           <div class="list-image-wrapper list-image-wrapper--small">
@@ -2740,8 +2747,6 @@ Det var som en bombe</div>
         </a>
       </div>
 
-    </div>
-      <div class="fnExpandable transition-expand">
     <div class="list-item list-item--rightcolumn eb-bg--black">
         <a href="/plus/taet-paa/vildt-boligprojekt-ungt-par-koeber-herregaard-for-29-millioner/7462148" class="list--flex size1of1 eb-bg--black">
           <div class="list-image-wrapper list-image-wrapper--small">
@@ -2828,25 +2833,6 @@ Det var som en bombe</div>
               <svg viewBox="0 0 100 100" class="ebplus-list">
                       <use xlink:href="#ebplus_sort"></use>
                     </svg>Et år efter rygestop: Sådan går det Jennifer og Steen</div>
-            </div>
-        </a>
-      </div>
-
-    <div class="list-item list-item--rightcolumn eb-bg--black">
-        <a href="/plus/taet-paa/foelger-du-mads-og-lasse-her-er-deres-superbaad/7462070" class="list--flex size1of1 eb-bg--black">
-          <div class="list-image-wrapper list-image-wrapper--small">
-    <img src="/incoming/tbssbn/7462063/IMAGE_ALTERNATES/relationSmall_150/desktop-20190105122118" height="84" width="150"
-      
-    class="list-image size1of1" />
-    <div class="indicator-overlay indicator-video"></div>
-    </div>
-<div class="list-text list-text--rightcolumn list-text--ekstra">
-            <div class="list-stamp  size1of1 fs-timestamp">
-      Tæt på</div>
-  <div class="oo-line">
-              <svg viewBox="0 0 100 100" class="ebplus-list">
-                      <use xlink:href="#ebplus_sort"></use>
-                    </svg>Følger du Mads og Lasse? Her er deres superbåd</div>
             </div>
         </a>
       </div>
@@ -3011,8 +2997,7 @@ Det var som en bombe</div>
     var tempDataLayer = []
 
     function checkIfBlocked () {
-      var wasBlocked = (typeof ADTECH === 'undefined' && 'false' !== 'true')
-
+      var wasBlocked = false;
       if (wasBlocked === false && 'false' !== 'true') {
         if (typeof adbDetectJS !== 'undefined' && adbDetectJS === true) {
           return true
