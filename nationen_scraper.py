@@ -7,6 +7,7 @@ def fetch_html(url):
     response = http.request('GET', url)
     return response.data.decode('cp1252')
 
+
 def parse_eb_html(raw_html):
 
     soup = BeautifulSoup(raw_html, "lxml")
@@ -50,3 +51,4 @@ def scrape_to_file(filepath):
 
     titles = titles_nationen + titles_1849
     append_titles(titles, filepath)
+
