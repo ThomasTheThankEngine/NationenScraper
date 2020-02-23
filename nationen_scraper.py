@@ -34,12 +34,15 @@ def parse_eb_html(raw_html):
 def append_titles(titles, filepath):
     
     existing_titles = set()
-    with open(filepath, 'r') as file:
-        for title in file.readlines():
-            existing_titles.add(title)
+    try:
+        with open(filepath, 'r+') as file:
+            for title in file.readlines():
+                existing_titles.add(title)
+    except:
+        print("Error trying to read from file %s, skipping this step" % (filepath))
     
     new_titles = set(titles).difference(existing_titles)
-    with open(filepath, 'a') as file:
+    with open(filepath, 'a+') as file:
         file.writelines(new_title + '\n' for new_title in new_titles)
 
 
