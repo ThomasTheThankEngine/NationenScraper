@@ -1,2 +1,0 @@
-python scrape.py
-pause
